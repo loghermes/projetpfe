@@ -1,0 +1,42 @@
+/* Center the form and make it responsive */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  /* Style the form labels */
+  form label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  /* Style the form inputs */
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="password"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  /* Style the form submit button */
+  form button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Style the form submit button on hover */
+  form button[type="submit"]:hover {
+    background-color: #0069d9;
+  }
+  

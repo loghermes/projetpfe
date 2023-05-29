@@ -1,0 +1,418 @@
+.cart, .minus, .plus {
+    background-color: #2980b9; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  .cart:hover, .minus:hover, .plus:hover {
+    background-color: #2980b9;
+  }
+  /* Center the H1 heading */
+h1 {
+    text-align: center;
+  }
+  
+  /* Style the alert messages */
+  .alert {
+    margin-top: 20px;
+    padding: 0.75rem 1.25rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+  }
+  
+  .alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+  }
+  
+  .alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+  }
+  
+  .alert-dismissble {
+    position: relative;
+    padding-right: 4.5rem;
+  }
+  
+  .alert-dismissble .btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    background-color: transparent;
+    color: inherit;
+  }
+  
+  /* Style the portfolio section */
+  .Portfolio {
+    padding: 60px 0;
+  }
+  
+  .Portfolio h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #000;
+  }
+  
+  .Portfolio h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #777;
+  }
+  
+  .Portfolio h3 span {
+    color: #000;
+  }
+  
+  .Portfolio .section-title {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  
+  .Portfolio .section-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  
+  .Portfolio .section-title h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #000;
+    bottom: 0;
+    left: calc(50% - 25px);
+  }
+  
+  .Portfolio .section-title h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .Portfolio .row {
+    margin-bottom: 30px;
+  }
+  
+  .Portfolio .col-md-3 {
+    margin-bottom: 30px;
+  }
+  
+  .Portfolio img {
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: all ease-in-out 0.3s;
+  }
+  
+  .Portfolio img:hover {
+    transform: scale(1.1);
+  }
+  
+  .Portfolio .card-body {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .Portfolio .card-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+  }
+  
+  .Portfolio .card-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .Portfolio .card-title span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #555;
+  }
+
+  /* general styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* section styles */
+  #Portfolio {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .section-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #4e4b4b;
+  }
+  
+  .section-title h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #2b2b2b;
+  }
+  
+  .section-title h3 span {
+    color: #ff9900;
+  }
+  
+  /* product card styles */
+  .card {
+    border: none;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .card-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #4e4b4b;
+  }
+  
+  .card-text {
+    color: #7a7a7a;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  .card h6 {
+    color: #4e4b4b;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .divpr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .cart {
+    padding: 16px 70px; /* increase padding to make button bigger */
+    background-color: #2980b9;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  .cart:hover {
+    background-color: #2980b9;
+  }
+  
+  .btn-dark {
+    background-color: #0b0b0b;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .btn-dark:hover {
+    background-color: #0b0b0b;
+  }
+  
+  /* alert styles */
+  .alert {
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+  }
+  
+  .alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+  }
+  
+  .alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+  }
+  
+  .alert-dismissble .btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    padding: 0.75rem 1.25rem;
+    color: inherit;
+  }
+  .btnclear {
+    background-color: #0b0b0b; /* green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btnclear:hover {
+    background-color: #0b0b0b; /* darker green */
+  }
+  .btncheckout {
+    background-color: #2980b9;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .btncheckout:hover {
+    background-color: #ff5555;
+  }
+  .my-3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-success {
+    color: #4a28a7;
+  }
+  
+  .bg-light {
+    background-color: #f8f9fa;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .mx-2 {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  
+  .my-2 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  
+  h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  #orderbutton {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #orderbutton:hover {
+    background-color: #0069d9;
+  }
+  
+  .cont {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .updatebutton {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .updatebutton:hover {
+    background-color: #3e8e41;
+  }
+  
+  
+ 
+ 
+  
+  
+  

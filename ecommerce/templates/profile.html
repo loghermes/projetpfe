@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}Profile{% endblock %}
+
+
+{% block body %}
+{% load static %} 
+<head><link href="{% static '/assets/css/cart.css' %}" rel="stylesheet"></head>
+<section id="profile" class="profile">  
+<div class ="cont">
+  <h2>Profile</h2>
+  <p>Welcome to your profile page!</p>
+
+  <h3>This is  your account information:</h3>
+  <form action="/update_userr" method="post">
+    {% csrf_token %}
+    <table>
+      <tr>
+        <tr>
+          <td><label for="username">username: </label></td>
+          <td>{{ user.username }}</td>
+        </tr>
+      
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td>{{ user.email }}</td>
+      </tr>
+      
+    </tr> 
+    </table>
+    
+    <button type="submit" class="updatebutton" href="/update_userr">Update</button>
+  </form>
+</div>
+</section>
+{% endblock body %}
